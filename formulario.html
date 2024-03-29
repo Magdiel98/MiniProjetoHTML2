@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Principal</title>
+    <link rel="stylesheet" href="css/formulario.css">
+</head>
+<body>
+    <header>
+        <div id="primeira">
+            <h1 id = "site">SITE</h1>
+            <nav class="navegacao">
+                <ul class="navegacao">
+                    <li class="navegacao">
+                        <a class="sublinhado cabecalho" href="index.html">INÍCIO</a>
+                    </li>
+                    <li class="navegacao">
+                        <a class="sublinhado cabecalho" href="">CONTATO</a>
+                    </li>
+                    <li class="navegacao">
+                        <a class="sublinhado cabecalho" href="">SERVIÇOS</a> 
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div id="segunda">
+            <a href="formulario.html" class="cabecalho"><div id="cadastrar">Cadastre-se</div></a>
+        </div>
+    </header>
+
+    <div id="conteudo">
+        <section>
+            <h1 id = "titulotexto">Cadastramento</h1>
+            <form action="">
+                <div class="divindividuais">
+
+                    <h2>Dados Pessoais</h2>
+
+                    <label for="name" class="label">Nome:</label>
+                    <input type="text" name="name" id="name" class="caixatexto" placeholder="Digite seu nome">
+
+                    <label for="idade" class="label">Idade:</label>
+                    <input type="number" name="idade" id="idade" class="caixatexto" min="0" max="100" placeholder="Digite sua idade">
+
+                    <label for="cpf" class="label">CPF:</label>
+                    <input type="text" name="cpf" id="cpf" class="caixatexto" pattern="[0-9]{3}\.[0-9]{3}\.[0-9]{3}-[0-9]{2}" placeholder="000.000.000-00">
+
+                    <label for="rg" class="label">RG:</label>
+                    <input type="text" name="rg" id="rg" class="caixatexto" placeholder="Digite seu RG">
+
+                    <label for="email" class="label">Email:</label>
+                    <input type="email" name="email" id="email" class="caixatexto" placeholder="nome@exemplo.com">
+
+                </div>
+                
+                <div class="divindividuais">
+
+                    <h2>Endereço</h2>
+                    <label for="rua" class="label">Rua:</label>
+                    <input type="text" name="rua" id="rua" class="caixatexto" placeholder="Digite o nome da rua">
+
+                    <label for="numero" class="label">Número:</label>
+                    <input type="number" name="numero" id="numero" class="caixatexto" placeholder="Digite o numero da residência">
+
+                    <label for="bairro" class="label">Bairro:</label>
+                    <input type="text" name="bairro" id="bairro" class="caixatexto" placeholder="Digite o seu bairro">
+
+                    <label for="cep" class="label">CEP:</label>
+                    <input type="text" name="cep" id="cep" class="caixatexto" pattern="[0-9]{5}-[0-9]{3}" placeholder="00000-000">
+
+                    <label for="cidade" class="label">Cidade:</label>
+                    <input type="text" name="cidade" id="cidade" class="caixatexto" placeholder="Digite sua cidade">
+
+                    <label for="estado" class="label">Estado:</label>
+                    <select name="estado" id="estado">
+                        <option value="">Selecione o estado</option>
+                        <option value="AC">Acre</option>
+                        <option value="AL">Alagoas</option>
+                        <option value="AP">Amapá</option>
+                        <option value="AM">Amazonas</option>
+                        <option value="BA">Bahia</option>
+                        <option value="CE">Ceará</option>
+                        <option value="DF">Distrito Federal</option>
+                        <option value="ES">Espírito Santo</option>
+                        <option value="GO">Goiás</option>
+                        <option value="MA">Maranhão</option>
+                        <option value="MT">Mato Grosso</option>
+                        <option value="MS">Mato Grosso do Sul</option>
+                        <option value="MG">Minas Gerais</option>
+                        <option value="PA">Pará</option>
+                        <option value="PB">Paraíba</option>
+                        <option value="PR">Paraná</option>
+                        <option value="PE">Pernambuco</option>
+                        <option value="PI">Piauí</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="RN">Rio Grande do Norte</option>
+                        <option value="RS">Rio Grande do Sul</option>
+                        <option value="RO">Rondônia</option>
+                        <option value="RR">Roraima</option>
+                        <option value="SC">Santa Catarina</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="SE">Sergipe</option>
+                        <option value="TO">Tocantins</option>
+                    </select>
+                </div>
+
+                <div class="divindividuais">
+
+                    <h2>Dados Sociais</h2>
+
+                    <label for="renda" class="label">Renda Média Familiar:</label>
+                    <input type="number" name="renda" id="renda" min="0" step="0.01" class="caixatexto" placeholder="Digite a renda">
+
+                    <label for="parentes" class="label">Quantidade de Parentes em Casa:</label>
+                    <input type="number" name="parentes" id="parentes" class="caixatexto" min="1" placeholder="Digite a quantidade">
+
+                </div>
+
+                <div class="divindividuais">
+
+                    <label for="carro" class="label">Possui Carro:</label>
+                    <input type="checkbox" name="carro" value="carro" class="checkbox">
+
+                    <label for="tv" class="label">Possui TV:</label>
+                    <input type="checkbox" name="tv" value="tv" class="checkbox">
+
+                    <label for="internet" class="label">Possui Internet:</label>
+                    <input type="checkbox" name="internet" value="internet" class="checkbox">
+                    
+                    <label for="computador" class="label">Possui Computador:</label>
+                    <input type="checkbox" name="computador" value="computador" class="checkbox">
+
+                    <label for="trabalhar" class="label">Precisa Trabalhar:</label>
+                    <input type="checkbox" name="trabalhar" value="trabalhar" class="checkbox">
+
+                </div>
+
+                <div class="divindividuais">
+                    <label for="tempolivre" class="label">O que faz no tempo livre:</label>
+                    <textarea name="tempolivre" id="tempolivre" cols="30" rows="10" placeholder="Digite aqui"></textarea>
+                </div>
+            </form>
+            <div id="botao">
+                <button>Enviar</button>
+                <button>Limpar</button>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        &copy; 2024|SITE. Todos os direitos reservados. Política de Privacidade
+    </footer>
+</body>
+</html>
